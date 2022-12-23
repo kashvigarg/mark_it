@@ -1,16 +1,28 @@
-# mark_it
+# MarkIt
 
-A new Flutter project.
+A bookmark manager that lets you directly share links from various social media and store them in a hassle free, concise manner. User can turn on storage saver to enable automatic 30 day removal for non-favourite bookmarks. 
 
-## Getting Started
+MarkIt has been implemented using flutter, with a hive database.
 
-This project is a starting point for a Flutter application.
+### ❗❗ Core features have been implemented without the use of any external libraries.
 
-A few resources to get you started if this is your first Flutter project:
+## Local Development
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  ##### Clone the repository
+```bash
+git clone https://github.com/kashvigarg/markit.git
+```
+  ##### Move to the root folder
+```bash
+cd \mark_it
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  ##### To run the app, simply write
+```bash
+flutter run
+```
+
+## Major Packages Used
+
+- `provider`
+- `hive_flutter`
