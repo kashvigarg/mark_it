@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mark_it/screens/favorites_screen.dart';
 import 'package:mark_it/screens/home_screen.dart';
+import 'package:mark_it/screens/search_screen.dart';
 
 // bottom bar widget to switch between app screens
 class BottomNavBar extends StatefulWidget {
@@ -17,7 +18,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   List<BottomNavigationBarItem> buildBottomBar() => const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favorites")
+        BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favorites"),
+        BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search")
       ];
 
   // PageView control function
@@ -41,7 +43,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     return PageView(
       controller: _pageController,
       onPageChanged: onPageChanged,
-      children: const [HomePage(), FavoritesPage()],
+      children: const [HomePage(), FavoritesPage(), SearchPage()],
     );
   }
 
